@@ -24,6 +24,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 className="w-full h-auto lg:hidden md:!inline-block md:!w-full"
                 src={profilePic}
+                alt="Image"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center lg:w-full lg:text-center ">

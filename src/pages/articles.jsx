@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 import article2 from "../../public/images/articles/create modal component in react using react portals.png";
 import { motion } from "framer-motion";
@@ -21,6 +21,7 @@ const LatestArticle = ({ img, title, time, summary, link }) => {
       >
         <FramerImage
           src={img}
+          alt="latest article"
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           className="w-full h-auto"
@@ -54,7 +55,11 @@ const Article = ({ img, title, date, link }) => {
         <h2 className="capitalize text-lg md:text-md font-semibold hover:underline underline-offset-2">
           {title}
         </h2>
-        <Image src={img} className="w-96 h-auto hidden absolute rounded-lg" />
+        <Image
+          src={img}
+          alt="article"
+          className="w-96 h-auto hidden absolute rounded-lg"
+        />
       </Link>
       <span className="text-primary dark:text-primaryDark font-semibold sm:self-start sm:pl-0 xs:text-sm sm:mt-2">
         {date}

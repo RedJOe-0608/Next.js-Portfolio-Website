@@ -23,6 +23,7 @@ const FeaturedProject = ({ type, title, summary, github, img, link }) => {
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           src={img}
+          alt="project img"
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}

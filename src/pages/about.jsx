@@ -69,6 +69,7 @@ const about = () => {
               />
               <Image
                 src={profilePic}
+                alt="Image for about"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 className="w-full h-full relative rounded-2xl"
