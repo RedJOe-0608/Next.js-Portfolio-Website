@@ -68,7 +68,7 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const articles = () => {
+const Articles = () => {
   const isSmall = useMediaQuery("(max-width: 430px)");
   console.log(isSmall);
   return (
@@ -166,4 +166,4 @@ const articles = () => {
   );
 };
 
-export default articles;
+export default Articles;
