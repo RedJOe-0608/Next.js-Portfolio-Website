@@ -25,7 +25,7 @@ const Skills = () => {
     <>
       <AnimatedText
         text="Skills"
-        className="font-bold text-8xl md:text-7xl md:mt-32 w-full text-center mt-64"
+        className="font-bold text-8xl md:!text-7xl xs:!text-5xl md:mt-32 w-full text-center mt-64"
       />
       <div
         className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 

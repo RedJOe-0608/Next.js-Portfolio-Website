@@ -49,7 +49,7 @@ const FeaturedProject = ({ type, title, summary, github, img, link }) => {
           </Link>
           <Link
             href={link}
-            className="rounded-lg bg-dark text-light dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light p-2 px-6 text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:text-dark hover:bg-light transition duration-200 sm:px-4 sm:text-base"
+            className="rounded-lg bg-dark text-light dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light p-2 px-6 text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:text-dark hover:bg-light transition duration-200 sm:px-4 sm:text-base ml-4 sm:!ml-2"
             target="_blank"
           >
             Visit Project
@@ -172,7 +172,7 @@ const projects = () => {
               />
             </div>
             <motion.div
-              initial={{ x: -400, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0 }}

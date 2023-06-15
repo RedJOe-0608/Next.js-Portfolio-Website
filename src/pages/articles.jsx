@@ -49,7 +49,7 @@ const Article = ({ img, title, date, link }) => {
       whileInView={{ y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, type: "spring", ease: "easeInOut" }}
-      className="w-full relative p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light shadow-xl text-dark dark:text-light dark:bg-dark dark:shadow-md dark:shadow-light first:mt-0 border border-r-4 border-b-4 border-dark sm:flex-col"
+      className="w-full relative p-4 py-6 my-8 rounded-xl flex items-center justify-between bg-light shadow-xl text-dark dark:text-light dark:bg-dark dark:shadow-md dark:shadow-light first:mt-0 border border-r-4 border-b-4 border-dark sm:flex-col"
     >
       <Link href="/" target="_blank">
         <h2 className="capitalize text-lg md:text-md font-semibold hover:underline underline-offset-2">

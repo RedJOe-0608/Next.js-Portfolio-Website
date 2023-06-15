@@ -21,7 +21,7 @@ const HireMe = () => {
         <Link
           href="mailto:joeswaroopmakena@gmail.com"
           className="flex items-center justify-center absolute bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-light hover:text-dark transition duration-200 
-          dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light md:w-12 md:h-12 lg:w-16 lg:h-16 lg:text-[13px] md:text-[10px]
+          dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light md:!w-[3.2rem] md:!h-[3.2rem] lg:w-16 lg:h-16 lg:text-[13px] md:!text-[10.3px]
           "
         >
           Hire Me

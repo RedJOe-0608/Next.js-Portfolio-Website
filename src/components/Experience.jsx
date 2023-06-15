@@ -44,10 +44,10 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-64 ">
+    <div className="my-64 md:my-32 ">
       <AnimatedText
         text="Experience"
-        className="py-16 md:text-6xl xs:text-4xl md:mb-16"
+        className="py-16 md:text-6xl xs:!text-5xl md:mb-16"
       />
       <div className="w-[75%] lg:w-[90%] md:w-full mx-auto relative ">
         <motion.div

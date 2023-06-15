@@ -60,7 +60,7 @@ const Navbar = () => {
     <header className=" dark:text-light w-full px-32 py-8 font-medium flex items-center justify-between z-10 relative lg:px-16 md:px-12 sm:px-8 ">
       <button
         onClick={handleClick}
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className=" flex-col justify-center items-center hidden lg:flex mt-[0.5rem]"
       >
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition duration-300 ease-in-out ${
@@ -136,7 +136,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0, x: "-50%", y: "-50%" }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0, type: "spring" }}
-            className="min-w-[70vw] z-10 bg-dark/90  dark:bg-light/75 rounded-lg backdrop-blur-md py-32 flex flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-between items-center "
+            className="min-w-[70vw] z-10 bg-dark/90  dark:bg-light/75 rounded-lg backdrop-blur-md py-32 sm:!py-24 flex flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-between items-center "
           >
             <nav className="flex flex-col items-center justify-center my-6">
               <CustomMobileLink

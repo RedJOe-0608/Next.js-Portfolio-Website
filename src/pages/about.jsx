@@ -17,7 +17,7 @@ const about = () => {
         <meta name="description" content="About page of my portfolio"></meta>
       </Head>
       <main className="flex flex-col dark:text-light items-center justify-center w-full">
-        <Layout className="pt-16 xl:!p-12  xsSkills:p-8">
+        <Layout className="pt-16 xl:!p-12 XsToSm:!p-8 xs:!p-4 ">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className=" !text-[5.5rem] lg:!text-[5rem] sm:!text-[3.75rem] xsSkills:!text-[3rem] inline-block xsSkills:mb-8 mb-16"
@@ -28,7 +28,7 @@ const about = () => {
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1, type: "spring" }}
-              className=" flex flex-col text-gray-700 dark:text-light w-[50%]  justify-center sm:text-base text-md aboutlg:w-full aboutlg:mt-16"
+              className=" flex flex-col text-gray-700 dark:text-light w-[50%]  justify-center sm:text-base text-md aboutlg:w-full aboutlg:mt-16 xs:!w-[90%] xs:mx-auto"
             >
               <h2 className="mb-4 text-xl text-dark/75 dark:text-light/75  font-bold uppercase">
                 About Me
