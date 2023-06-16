@@ -11,7 +11,7 @@ import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useMediaQuery } from "@/components/hooks/useMediaQuery";
 
-const about = () => {
+const About = () => {
   const isSmall = useMediaQuery("(max-width: 1040px)");
   return (
     <>
@@ -93,4 +93,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
