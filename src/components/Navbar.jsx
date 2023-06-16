@@ -57,7 +57,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" dark:text-light w-full px-32 py-8 font-medium flex items-center justify-between z-10 relative lg:px-16 md:px-12 sm:px-8 ">
+    <header className=" dark:text-light w-full px-32 py-8 font-medium flex items-center justify-between z-10 relative lgSkills:!px-16 MdToLg:!px-16 SmToMd:!px-12 sm:!px-8 ">
       <button
         onClick={handleClick}
         className=" flex-col justify-center items-center hidden lg:flex mt-[0.5rem]"

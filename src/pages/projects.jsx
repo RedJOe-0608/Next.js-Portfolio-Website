@@ -8,6 +8,7 @@ import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 
 import { motion } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -118,6 +119,7 @@ const projects = () => {
         <title>Projects Page</title>
         <meta name="description" content="About page of my portfolio"></meta>
       </Head>
+      <TransitionEffect />
       <main className="flex flex-col w-full items-center justify-center mb-16">
         <Layout className="pt-16 sm:!p-[4rem] xs:!p-[2rem]">
           <AnimatedText
@@ -130,7 +132,7 @@ const projects = () => {
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1 }}
+              transition={{ duration: 1, delay: 1.7 }}
               className="col-span-12"
             >
               <FeaturedProject

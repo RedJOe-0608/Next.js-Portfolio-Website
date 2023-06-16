@@ -8,6 +8,7 @@ import article1 from "../../public/images/articles/pagination component in react
 import article2 from "../../public/images/articles/create modal component in react using react portals.png";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "@/components/hooks/useMediaQuery";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -69,7 +70,7 @@ const Article = ({ img, title, date, link }) => {
 };
 
 const Articles = () => {
-  const isSmall = useMediaQuery("(max-width: 430px)");
+  const isSmall = useMediaQuery("(max-width: 769px)");
   console.log(isSmall);
   return (
     <>
@@ -77,6 +78,7 @@ const Articles = () => {
         <title>Articles Page</title>
         <meta name="description" content="Articles Page Of My Portfolio"></meta>
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16 sm:!p-[2rem] SmToMd:!p-[5rem] MdToLg:!p-12  ">
           <AnimatedText
@@ -89,7 +91,7 @@ const Articles = () => {
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 1.5, duration: 1 }}
+              transition={{ delay: 2, duration: 1 }}
             >
               <LatestArticle
                 img={article1}
@@ -106,9 +108,7 @@ const Articles = () => {
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={
-                isSmall ? { duration: 1 } : { delay: 1.5, duration: 1 }
-              }
+              transition={isSmall ? { duration: 1 } : { delay: 2, duration: 1 }}
             >
               <LatestArticle
                 img={article1}

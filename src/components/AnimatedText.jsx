@@ -8,7 +8,8 @@ const quote = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 1,
+      delay: 0.5,
+      when: "beforeChildren",
       staggerChildren: 0.2,
     },
   },
@@ -31,7 +32,7 @@ const singleWord = {
 const AnimatedText = ({ text, py, className = "" }) => {
   console.log(text.split(" ").length);
   return (
-    <div className="w-full flex items-center justify-center text-center mx-auto py-2 sm:py-0">
+    <motion.div className="w-full flex items-center justify-center text-center mx-auto py-2 sm:py-0">
       <motion.h1
         variants={quote}
         initial="initial"
@@ -52,7 +53,7 @@ const AnimatedText = ({ text, py, className = "" }) => {
           );
         })}
       </motion.h1>
-    </div>
+    </motion.div>
   );
 };
 
